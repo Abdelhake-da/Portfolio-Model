@@ -1,24 +1,8 @@
 main .body-section .view-program{
     width: 100%;
+    border-right: 2px solid #5b93dce7;
+    /* padding-left: .5rem; */
 }
-main .body-section .content .p-imgs{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;
-    margin: 10px 0;
-}
-main .body-section .content .p-imgs img{
-   width: 20%;
-   border: 3px solid #5b93dce7;
-   border-radius: 10px;
-   padding: 2px;
-   cursor: pointer;
-}
-main .body-section .content .p-imgs img{
-    margin-right:4px ;
-}
-main .body-section .content .p-imgs img:hover{
-    position: absolute;
-    width: 80%;
+main .body-section .projects{
+    padding-left: .5rem;
 }
