@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+body{
+    font-family: sans-serif;
+    padding: 1rem 0;
+    height: 100vh;
+    background-color: #000000ef;
+    color: white;
+    position: relative;
+    letter-spacing: 1.5px;
+}
+
+.line{
+    position: absolute;
+    width: 12rem;
+}
+.top{
+    top:1rem;
+    left: 8%;
+}
+.bottom{
+    right: 8%;
+    bottom: 1rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0rem 7%;
+    padding-left:.9rem;
+}
+main header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    padding-top: 2rem;
+}
+main header .logo img{
+    width: 3rem;
+}
+main header .contect-me .c-items{
+    display: flex;
+    align-items: center;
+}
+main header .contect-me .c-items .c-item:not(:last-of-type){
+    margin-right:2rem;
+}
+main header .contect-me .c-items .c-item a{
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+    text-transform: capitalize;
+}
+main header .contect-me .c-items .c-item a:hover{
+    color: #5b93dce7;
+}
