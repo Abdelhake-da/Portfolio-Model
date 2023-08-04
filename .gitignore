@@ -1,1 +1,4 @@
 .vscode
+*.css.map
+*.scss
+style1

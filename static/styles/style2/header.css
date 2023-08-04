@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top {
+  top: 0;
+}
+header .logo {
+  margin: 4rem 0rem 2rem 4rem;
+  width: 6rem;
+}
+header .links {
+  margin-right: 1rem;
+}
+header .links ul {
+  display: flex;
+}
+header .links ul li:not(:last-of-type) {
+  margin-right: 1rem;
+}
+header .links ul li a {
+  padding: 3px;
+  border-bottom: 2px solid #4f80c1;
+  font-size: 1.1428571429rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+header .links ul li a:hover {
+  color: #4f80c1;
+  border-bottom: 2px dashed white;
+}/*# sourceMappingURL=header.css.map */

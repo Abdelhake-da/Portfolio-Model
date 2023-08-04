@@ -1,0 +1,61 @@
+.body-section {
+  width: 95%;
+  margin: 0 auto 2rem;
+}
+.body-section .about-me {
+  width: 75%;
+  margin: auto;
+  border-left: 4px solid #4f80c1;
+  padding-left: 1rem;
+}
+.body-section .about-me .title {
+  font-size: 1.3333333333rem;
+}
+.body-section .about-me .title span {
+  color: #4f80c1;
+}
+.body-section .about-me .discription {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.body-section .carts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.body-section .carts .cart {
+  margin-bottom: 1.5rem;
+  max-width: 30%;
+  height: 380px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.body-section .carts .cart img {
+  border-radius: 10px 10px 0 0px;
+  height: 50%;
+}
+.body-section .carts .cart .text {
+  height: 40%;
+  padding: 5px 0 0 5px;
+}
+.body-section .carts .cart .text h5 {
+  height: 10%;
+  font-size: 0.9rem;
+  display: inline;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #4f80c1;
+}
+.body-section .carts .cart .text h5:hover {
+  border-bottom: 2px dashed #4f80c1;
+  color: white;
+}
+.body-section .carts .cart .text p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  overflow-y: auto;
+  padding: 0 10px;
+  height: 85%;
+  text-align: justify;
+}/*# sourceMappingURL=section.css.map */
