@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style/section.css')}}">
+{% endblock  %}
+
+{% block body_section %}
+    <section class="body-section"id="about-me">
+        <div class="about-me" >
+            <h1 class="title">
+                Welcome, I am <span>Abdelhake Dabladji</span>.
+            </h1>
+            <p class="discription">
+                i'm Fullstack Developer with one year of experience, I am
+                a
+                dynamic and versatile professional proficient in both front-end and back-end
+                technologies.Throughout
+                my journey as a developer, I have honed my skills to create seamless, user-friendly, and
+                efficient
+                web applications that deliver exceptional user experiences. My passion for coding and
+                problem-solving drives me to stay updated with the latest industry trends and best practices.
+            </p>
+        </div>
+        <hr id="projects">
+        <div class="carts" >
+            {% for project in projects %}
+                <div class="cart">
+                    <img src="{{url_for('static', filename=project["path_img"])}}">
+                    <div class="text">
+                        <a href="{{ url_for("project", project_id=project["_id"]) }}">
+                            <h5>{{project["project_name"]}} </h5>
+                        </a>
+                        <p>
+                        
+                            {{project["project_disc"]}}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+            
+    </section>
+    
+{% endblock  %}
+       

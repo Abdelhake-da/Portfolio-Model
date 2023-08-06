@@ -1,0 +1,103 @@
+form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Style for the container */
+  /* Style for each image */
+}
+form #fileInput {
+  display: none;
+}
+form input {
+  font-size: 1.2rem;
+  width: 450px;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid #4f80c1;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+form input:focus {
+  border-style: dashed;
+}
+form textarea {
+  font-size: 1.2rem;
+  width: 450px;
+  background-color: black;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #4f80c1;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+form textarea:focus {
+  border-style: dashed;
+}
+form .image-container {
+  margin-top: 1rem;
+  display: flex;
+  max-width: 600px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+form .image-item img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #4f80c1;
+  padding: 2px;
+  object-fit: cover;
+}
+form label {
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+form label img {
+  width: 15%;
+}
+form label:hover {
+  transform: scale(1.1);
+}
+form .image-item {
+  position: relative;
+}
+form .remove-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  position: absolute;
+  cursor: pointer;
+  color: black;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  right: 7px;
+  top: 7px;
+}
+form .remove-btn:hover {
+  transform: scale(1.2);
+}
+form .submit {
+  font-size: 1.2rem;
+  color: black;
+  padding: 0.2rem 1rem;
+  background-color: #4f80c1;
+  border: 1px solid rgba(255, 0, 0, 0);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+form .submit:hover {
+  color: #4f80c1;
+  border: 1px solid #4f80c1;
+  background-color: black;
+}/*# sourceMappingURL=form.css.map */

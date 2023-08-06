@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelhake Dabladji</title>
+    <link rel="icon" href="./static/images/blackLogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style/main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style/header.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style/footer.css')}}">
+    {% block styles %}
+        
+    {% endblock  %}
+</head>
+
+<body>
+
+    <main class="main">
+        <header id="home">
+            <div class="line top">
+                <a href="#home"><img src="{{url_for('static', filename='/images/Asset 4.svg')}}" alt=""></a>
+            </div>
+            <div class="logo">
+                <a href="{{url_for("home")}}"> <img src="{{url_for('static', filename='/images/whiteLogo.svg')}}" alt=""> </a>
+            </div>
+            <div class="links">
+                <ul class="c-items">
+                    <li class="c-item"><a href="{{url_for("home")}}#about-me">about me</a> </li>
+                    <li class="c-item"><a href="{{url_for("home")}}#projects">projects</a> </li>
+                    <li class="c-item"><a href="#contact-me">contact me</a> </li>
+                </ul>
+            </div>
+        </header>
+
+        {% block body_section %}
+        
+        {% endblock  %}
+        <footer>
+            <div class="contact-me" id="contact-me">
+                <ul class="c-items">
+                    <li class="c-item"><a href="mailto: abdohako92@gmail.com">gmail</a> </li>
+                    <li class="c-item"><a href="https://github.com/Abdelhake-da">github</a> </li>
+                    <li class="c-item"><a href="https://www.facebook.com/profile.php?id=100011114042234">facebook</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="add" href="{{url_for("add_project")}}">
+                <p>@2023 Abdelhake Dabladji</p>
+            </a>
+            <div class="line bottom">
+                <img src="{{url_for('static', filename='/images/Asset 3.svg')}}" alt="">
+            </div>
+        </footer>
+    </main>
+    {% block scripts %}
+    {% endblock  %}
+</body>
+
+</html>

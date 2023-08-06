@@ -2,3 +2,5 @@
 *.css.map
 *.scss
 style1
+.portfolio_env
+__pycache__

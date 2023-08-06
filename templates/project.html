@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style/prejects_section.css')}}">
+{% endblock  %}
+
+{% block body_section %}
+    <section class="project-section">
+        <h1 class="name">{{project["project_name"]}}</h1>
+        <div class="tec-div">
+            <p>I used in this app :</p>
+            <p class="tec">{{project["tec"]}}</p>
+        </div>
+        <div class="slide-img">
+            {% for img in project["images"] %}
+                <img class="mySlides" src="{{url_for('static', filename=img)}}">
+            {% endfor %}
+            <div class="control">
+                <div class="pre btn clickable" onclick="plusDivs(-1)">&#10094;</div>
+                <div>
+                    {% set counter = namespace(value=0) %}
+                    {% for img in project["images"] %}
+                        {% set counter.value = counter.value + 1 %}
+                        
+                        <span class=" demo clickable" onclick="currentDiv({{ counter.value }})"></span>
+                        
+                    {% endfor %}
+                </div>
+                <div class="next btn clickable" onclick="plusDivs(1)">&#10095;</div>
+            </div>
+        </div>
+        <p class="discription">
+            {{project["project_disc"]}}
+        </p>
+    </section>
+{% endblock  %}
+        
+{% block scripts %}
+    <script  src="{{ url_for('static', filename="script/index.js") }}"></script>
+{% endblock  %}

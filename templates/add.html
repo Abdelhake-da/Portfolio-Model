@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style/form.css')}}">
+{% endblock  %}
+{% block body_section %}
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input name="name" type="text" placeholder="name">
+        <input name="tec" type="text" placeholder="tec">
+        <textarea name="disc" id="" cols="30" rows="10" placeholder="discription"></textarea>
+        <div class="image-container" id="imageContainer"></div>
+        <input id="fileInput" name="file" type="file" accept="image/*" multiple onchange="previewImages(event)">
+        <label for="fileInput" class="PopUpActions-filePicker">
+            <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-photo.e5fd72ac37a762a402ea.svg">
+            Choose Photo</label>
+        <button class="submit" type="submit">submit</button>
+    </form>
+{% endblock  %}
+{% block scripts %}
+    <script  src="{{ url_for('static', filename="script/img_shower.js") }}"></script>
+{% endblock  %}

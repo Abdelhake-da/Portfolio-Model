@@ -28,6 +28,9 @@ footer .contact-me ul li a:hover {
 footer p {
   margin-right: 1.4rem;
 }
+footer .add {
+  cursor: default;
+}
 footer .bottom {
   bottom: -30px;
   right: 0;
