@@ -1,4 +1,4 @@
-gunicorn app:app -w l --log-file -
+gunicorn main:app -w l --log-file -
 
 # AND APP PY IS FROM YOU APP.PY FILE
 # and app is form THIS app = Flask(__name__)
